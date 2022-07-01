@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Template.MainPage">
+	<Grid>
+        <Image
+            Source="login_background.png"
+            HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill"/>
+        <AbsoluteLayout>
+            <BoxView Color="#80000000"
+                     AbsoluteLayout.LayoutBounds="0, 0, 520, 750"/>
+            <BoxView Color="green"
+                     AbsoluteLayout.LayoutBounds="10, 10, 11, 700" />
+            <BoxView Color="green"
+                     AbsoluteLayout.LayoutBounds="10, 10, 1173, 11" />
+            <BoxView Color="green"
+                     AbsoluteLayout.LayoutBounds="10, 700, 1173, 11" />
+            <BoxView Color="green"
+                     AbsoluteLayout.LayoutBounds="1173, 10, 10, 700" />
+        </AbsoluteLayout>
+        <VerticalStackLayout
+            HorizontalOptions="Start"
+            WidthRequest="520">
+            <Label Text="전동화성능개발센터" FontSize="40" FontAttributes="Bold"
+                   HorizontalOptions="Center" Margin="150 0 0 0"/>
+            <Label Text="자원관리 시스템" FontSize="40" FontAttributes="Bold"
+                   HorizontalOptions="Center" Margin="10 0 150 0"/>
+            <HorizontalStackLayout
+                HorizontalOptions="CenterAndExpand"
+                Padding="10 40">
+                <Label Text="아이디" />
+                <Entry Placeholder="사번" PlaceholderColor="silver"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Padding="10 40">
+                <Label Text="비밀번호"/>
+                <Entry Placeholder="비밀번호" PlaceholderColor="silver" IsPassword="True"/>
+            </HorizontalStackLayout>
+            <Label Text="아이디/비밀번호를 잊어버렸어요 ;("
+                   HorizontalOptions="Center"
+                   Margin="30"/>
+            <Button Text="로그인" FontAttributes="Bold"
+                    Margin="10 100"/>
+
+        </VerticalStackLayout>
+        
+    </Grid>		 
+    
+ 
+</ContentPage>
+
